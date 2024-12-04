@@ -1,0 +1,23 @@
+﻿@model WebApplication1_HW_29_11_2024.ViewModels.BookViewModel
+
+<h2>Добавить новую книгу</h2>
+
+<form asp-action="Add" method="post">
+    <div class="form-group">
+        <label for="Title">Название</label>
+        <input type="text" id="Title" name="Title" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="Author">Автор</label>
+        <input type="text" id="Author" name="Author" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="Genre">Жанр</label>
+        <input type="text" id="Genre" name="Genre" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="Year">Год издания</label>
+        <input type="number" id="Year" name="Year" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Добавить</button>
+</form>
